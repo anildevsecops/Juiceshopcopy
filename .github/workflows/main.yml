@@ -17,10 +17,10 @@ jobs:
           polaris_server_url: ${{ secrets.POLARIS_SERVER_URL }}
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_assessment_types: "SCA,SAST"
-          polaris_onboarding: true
+          #polaris_onboarding: true
           
           ### SCANNING: Optional fields
-          polaris_application_name: ${{ github.event.organization.name }}
+          polaris_application_name: "testgithubaction"
           polaris_project_name: ${{ github.event.repository.name }}
           
           ### PULL REQUEST COMMENTS: Uncomment below to enable
